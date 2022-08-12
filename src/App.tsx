@@ -1,8 +1,10 @@
+import CharacterSelectPage from "./pages/CharacterSelect/index";
+
 function App() {
   return (
-    <div className="App">
-      <h1>Commit 1</h1>
-    </div>
+    <>
+      <CharacterSelectPage />
+    </>
   );
 }
 
