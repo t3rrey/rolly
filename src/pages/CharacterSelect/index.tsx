@@ -1,11 +1,13 @@
 import Menu from "../../components/menu";
-
+import Carousel from "../../components/carousel";
 const CharacterSelectPage = () => {
   return (
-    <div className="bg-red-500">
-      <title>Character Select</title>
+    <>
+    <div className="">
       <Menu />
+      <Carousel />
     </div>
+    </>
   );
 };
 
