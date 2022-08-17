@@ -1,4 +1,3 @@
-/* This example requires Tailwind CSS v2.0+ */
 import { Fragment, useState } from 'react'
 import { Dialog, Transition } from '@headlessui/react'
 import {
@@ -12,6 +11,7 @@ import {
   XIcon,
 } from '@heroicons/react/outline'
 import LogoIcon from '../../components/icons/LogoIcon'
+import Game from '../../components/game'
 
 const navigation = [
   { name: 'Dashboard', href: '#', icon: HomeIcon, current: true },
@@ -30,15 +30,7 @@ const Dashboard = () => {
   const [sidebarOpen, setSidebarOpen] = useState(false)
 
   return (
-    <>
-      {/*
-        This example requires updating your template:
-
-        ```
-        <html class="h-full bg-gray-100">
-        <body class="h-full">
-        ```
-      */}
+    <> 
       <div>
         <Transition.Root show={sidebarOpen} as={Fragment}>
           <Dialog as="div" className="relative z-40 md:hidden" onClose={setSidebarOpen}>
@@ -207,11 +199,9 @@ const Dashboard = () => {
                 <h1 className="text-2xl font-semibold text-gray-900">Dashboard</h1>
               </div>
               <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-8">
-                {/* Replace with your content */}
                 <div className="py-4">
-                  <div className="border-4 border-dashed border-gray-200 rounded-lg h-96" />
+                  <Game />
                 </div>
-                {/* /End replace */}
               </div>
             </div>
           </main>
